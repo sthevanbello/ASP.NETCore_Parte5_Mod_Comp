@@ -29,7 +29,7 @@ namespace CasaDoCodigo
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddLogging(loggingBuilder => loggingBuilder.AddSerilog(dispose: true));
-            services.AddMvc();
+            services.AddMvc(); 
             services.AddDistributedMemoryCache();
             services.AddSession();
 

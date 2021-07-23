@@ -1,4 +1,5 @@
-﻿using CasaDoCodigo.Data;
+﻿using CasaDoCodigo.Areas.Catalogo.Data;
+using CasaDoCodigo.Data;
 using CasaDoCodigo.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +35,7 @@ namespace CasaDoCodigo
             services.AddSession();
 
             ConfigurarContexto<ApplicationDbContext>(services, "Default");
+            ConfigurarContexto<CatalogoDbContext>(services, "Catalogo");
 
             ConfigurarDI(services);
 

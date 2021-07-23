@@ -26,6 +26,10 @@
     <Compile Include="Areas\Cadastro\Controllers\HomeController.cs" />
     <Compile Include="Areas\Carrinho\Controllers\HomeController.cs" />
     <Compile Include="Areas\Catalogo\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Catalogo\Data\CatalogoDbContext.cs" />
+    <Compile Include="Areas\Catalogo\Data\Migrations\20210723210649_AreaCatalogo.cs" />
+    <Compile Include="Areas\Catalogo\Data\Migrations\20210723210649_AreaCatalogo.Designer.cs" />
+    <Compile Include="Areas\Catalogo\Data\Migrations\CatalogoDbContextModelSnapshot.cs" />
     <Compile Include="Areas\Catalogo\Models\ViewModels\CarrosselPaginaViewModel.cs" />
     <Compile Include="Areas\Catalogo\Models\ViewModels\CarrosselViewModel.cs" />
     <Compile Include="Areas\Catalogo\Models\ViewModels\CategoriasViewModel.cs" />
@@ -46,6 +50,11 @@
 
   <ItemGroup>
     <Content Include="..\..\..\_Recursos\produtos\livros.txt" Link="wwwroot\images\produtos\livros.txt" />
+    <Content Include="Areas\Catalogo\Data\livros.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
     <Content Include="Areas\Catalogo\Views\Home\Index.cshtml" />
     <Content Include="Areas\_ViewImports.cshtml">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -73,7 +82,6 @@
     <Folder Include="Areas\Cadastro\Models\" />
     <Folder Include="Areas\Carrinho\Data\" />
     <Folder Include="Areas\Carrinho\Models\" />
-    <Folder Include="Areas\Catalogo\Data\" />
     <Folder Include="Areas\Pedido\Data\" />
     <Folder Include="Areas\Pedido\Models\" />
     <Folder Include="wwwroot\images\produtos\" />

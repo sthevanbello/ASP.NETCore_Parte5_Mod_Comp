@@ -26,6 +26,8 @@
     <Compile Include="Areas\Cadastro\Controllers\HomeController.cs" />
     <Compile Include="Areas\Carrinho\Controllers\HomeController.cs" />
     <Compile Include="Areas\Catalogo\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Catalogo\Models\ViewModels\CategoriasViewModel.cs" />
+    <Compile Include="Areas\Catalogo\ViewComponents\CategoriasViewComponent.cs" />
     <Compile Include="Areas\Identity\Data\AppIdentityContext.cs" />
     <Compile Include="Areas\Identity\Data\AppIdentityUser.cs" />
     <Compile Include="Areas\Identity\IdentityHostingStartup.cs" />
@@ -67,7 +69,7 @@
     <Folder Include="Areas\Carrinho\Data\" />
     <Folder Include="Areas\Carrinho\Models\" />
     <Folder Include="Areas\Catalogo\Data\" />
-    <Folder Include="Areas\Catalogo\Models\" />
+    <Folder Include="Areas\Catalogo\ViewComponents\Categorias\" />
     <Folder Include="Areas\Pedido\Data\" />
     <Folder Include="Areas\Pedido\Models\" />
     <Folder Include="wwwroot\images\produtos\" />
@@ -78,6 +80,7 @@
     <None Include="Areas\Cadastro\Views\Home\_NavegacaoCadastro.cshtml" />
     <None Include="Areas\Carrinho\Views\Home\Index.cshtml" />
     <None Include="Areas\Carrinho\Views\Home\_NavegacaoCarrinho.cshtml" />
+    <None Include="Areas\Catalogo\Views\Home\Components\Categorias\Default.cshtml" />
     <None Include="Areas\Catalogo\Views\Home\_BuscaProdutos.cshtml" />
     <None Include="Areas\Catalogo\Views\Home\_ProdutoCard.cshtml" />
     <None Include="Areas\Identity\Pages\Account\ExternalLogin.cshtml" />
